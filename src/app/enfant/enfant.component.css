@@ -1,0 +1,26 @@
+:host{
+  background-color: black;
+  color:white;
+  cursor:pointer;
+  font-family: Courier;
+  display:inline-block;
+}
+div{
+  background-color: #777;
+}
+div > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #777;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid black;
+  width:100px;
+  height:100px;
+
+}
+  div > div.ON {
+  background-color: darkorange;
+}

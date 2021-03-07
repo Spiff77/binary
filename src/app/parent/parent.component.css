@@ -1,0 +1,13 @@
+button {
+  width : 300px;
+  height:30px;
+  cursor: pointer;
+  margin-top:10px;
+  border: 1px solid darkorange;
+  background-color: #777;
+  color: white;
+}
+button:active {
+  background-color: white;
+  color: black
+}
