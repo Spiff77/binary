@@ -16,14 +16,11 @@ export class ParentComponent {
 
   calcTotalParent() {
     let bindex = 0;
-    let prev = 1;
     this.total = 0;
     this.viewChildren.toArray().reverse().forEach( (children, index) => {
-      bindex = !bindex ? 1 : prev * 2;
-      prev = bindex;
-      console.log(bindex);
+      bindex = !bindex ? 1 : bindex  * 2;
       if (children.activated) {
-        this.total +=  (bindex);
+        this.total += bindex;
       }
     });
   }
