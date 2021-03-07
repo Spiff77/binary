@@ -17,7 +17,7 @@ export class ParentComponent {
   calcTotalParent() {
     let bindex = 0;
     this.total = 0;
-    this.viewChildren.toArray().reverse().forEach( (children, index) => {
+    this.viewChildren.toArray().reverse().forEach( (children) => {
       bindex = !bindex ? 1 : bindex  * 2;
       if (children.activated) {
         this.total += bindex;
